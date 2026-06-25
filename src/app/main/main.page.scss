@@ -1,0 +1,46 @@
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo-container img {
+  max-height: 80px;
+  width: auto;
+}
+
+.btn-naranja {
+  --background: #FF6E05;
+  --background-hover: #fb8c00;
+  --background-activated: #f57c00;
+  --color: white;
+}
+
+.menu-botones {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+ion-content {
+  --background: none;
+  background-image: url('/assets/images/granito.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.imagen-inferior {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.imagen-inferior img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px; /* opcional */
+}

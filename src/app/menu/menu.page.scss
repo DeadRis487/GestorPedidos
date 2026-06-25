@@ -1,0 +1,58 @@
+.custom-color {
+  --background: #FF6E05; 
+  --color: white;        
+}
+
+ion-content {
+  --background: #fdf6e3;
+}
+
+.categoria {
+  font-size: 22px;
+  font-weight: bold;
+  color: #d35400;
+  margin: 15px;
+}
+
+.plato-card {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.plato-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.nombre {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.precio {
+  font-size: 15px;
+  color: #444;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.btn-comprar {
+  --background: #e67e22;
+}
+
+.contador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.cantidad {
+  font-size: 18px;
+  font-weight: bold;
+  min-width: 25px;
+  text-align: center;
+}

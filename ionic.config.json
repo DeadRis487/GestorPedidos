@@ -1,0 +1,7 @@
+{
+  "name": "GestorPedidos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

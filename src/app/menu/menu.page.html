@@ -1,0 +1,211 @@
+<ion-header>
+  <ion-toolbar class="custom-color">
+    <ion-title>La Olla Arequipeña</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="categoria">
+  ENTRADAS
+</div>
+
+<ion-grid>
+  <ion-row>
+
+    <ion-col
+      size="6"
+      *ngFor="let entrada of entradas">
+
+      <ion-card class="plato-card">
+
+        <img [src]="entrada.imagen">
+
+        <ion-card-content>
+
+          <div class="nombre">
+            {{ entrada.nombre }}
+          </div>
+
+          <div class="precio">
+            S/. {{ entrada.precio }}
+          </div>
+
+          <ion-button
+            expand="block"
+            class="btn-comprar"
+            (click)="agregarAlPedido(entrada)">
+
+            Agregar
+
+          </ion-button>
+
+          <div class="contador">
+
+  <ion-button
+    size="small"
+    fill="outline"
+    (click)="decrementar(entrada)">
+
+    -
+
+  </ion-button>
+
+  <span class="cantidad">
+    {{ entrada.cantidad }}
+  </span>
+
+  <ion-button
+    size="small"
+    fill="outline"
+    (click)="incrementar(entrada)">
+
+    +
+
+  </ion-button>
+
+</div>
+
+        </ion-card-content>
+
+      </ion-card>
+
+    </ion-col>
+
+  </ion-row>
+</ion-grid>
+
+  <div class="categoria">
+    SEGUNDOS
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col
+        size="6"
+        *ngFor="let plato of platos">
+
+        <ion-card class="plato-card">
+
+          <img [src]="plato.imagen">
+
+          <ion-card-content>
+
+            <div class="nombre">
+              {{ plato.nombre }}
+            </div>
+
+            <div class="precio">
+              S/. {{ plato.precio }}
+            </div>
+
+            <ion-button
+              expand="block"
+              class="btn-comprar"
+              (click)="agregarAlPedido(plato)">
+
+              Agregar
+
+            </ion-button>
+
+            <div class="contador">
+
+  <ion-button
+    size="small"
+    fill="outline"
+    (click)="decrementar(plato)">
+
+    -
+
+  </ion-button>
+
+  <span class="cantidad">
+    {{ plato.cantidad }}
+  </span>
+
+  <ion-button
+    size="small"
+    fill="outline"
+    (click)="incrementar(plato)">
+
+    +
+
+  </ion-button>
+
+</div>
+
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+<div class="categoria">
+  BEBIDAS
+</div>
+
+<ion-grid>
+  <ion-row>
+
+    <ion-col
+      size="6"
+      *ngFor="let bebida of bebidas">
+
+      <ion-card class="plato-card">
+
+        <img [src]="bebida.imagen">
+
+        <ion-card-content>
+
+          <div class="nombre">
+            {{ bebida.nombre }}
+          </div>
+
+          <div class="precio">
+            S/. {{ bebida.precio }}
+          </div>
+
+          <ion-button
+            expand="block"
+            class="btn-comprar"
+            (click)="agregarAlPedido(bebida)">
+
+            Agregar
+
+          </ion-button>
+
+          <div class="contador">
+
+  <ion-button
+    size="small"
+    fill="outline"
+    (click)="decrementar(bebida)">
+
+    -
+
+  </ion-button>
+
+  <span class="cantidad">
+    {{ bebida.cantidad }}
+  </span>
+
+  <ion-button
+    size="small"
+    fill="outline"
+    (click)="incrementar(bebida)">
+
+    +
+
+  </ion-button>
+
+</div>
+
+        </ion-card-content>
+
+      </ion-card>
+
+    </ion-col>
+
+  </ion-row>
+</ion-grid>
+  
+</ion-content>
