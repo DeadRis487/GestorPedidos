@@ -1,0 +1,81 @@
+/* Fondo crema */
+ion-content {
+  --background: #f8f1e4;
+}
+
+.carrito-vacio{
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:30px;
+}
+
+.carrito-vacio h2{
+  font-size:30px;
+  margin-bottom:15px;
+  color:#8B4513;
+}
+
+.carrito-vacio p{
+  color:#666;
+  margin-bottom:30px;
+}
+
+.carrito-vacio ion-button{
+  width:220px;
+  margin-top:12px;
+}
+
+/* Barra superior */
+ion-toolbar {
+  --background: #d97706;
+  --color: white;
+}
+
+/* Lista */
+ion-list {
+  background: transparent;
+  padding: 10px;
+}
+
+/* Tarjeta de cada producto */
+ion-item {
+  --background: white;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+  --padding-start: 15px;
+  --padding-end: 15px;
+}
+
+/* Nombre del plato */
+ion-label h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Información secundaria */
+ion-label p {
+  margin-top: 5px;
+  color: #666;
+}
+
+/* Botón eliminar */
+ion-button {
+  --background: #dc3545;
+  --border-radius: 10px;
+}
+
+/* Total */
+.total {
+  margin-top: 20px;
+  text-align: right;
+  font-size: 22px;
+  font-weight: bold;
+  color: #d97706;
+}

@@ -14,6 +14,10 @@ import { ProductosService } from '../services/productos.service';
 
 export class MenuPage implements OnInit {
 
+constructor(
+  private productosService: ProductosService
+) { }
+
 agregarAlPedido(plato: any) {
 
   if (plato.cantidad > 0) {
@@ -134,12 +138,6 @@ bebidas = [
     cantidad: 0
   }
 ];
-
-
-
-  constructor(
-    private productosService: ProductosService
-  ) { }
 
   ngOnInit() {
   }
