@@ -1,0 +1,52 @@
+ion-content{
+
+    --background:#f8f1e4;
+
+}
+
+.register-container{
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100%;
+
+    gap:18px;
+
+    padding:20px;
+
+    transform:translateY(-40px);
+
+}
+
+.logo{
+
+    width: 300px;
+
+    margin-bottom:10px;
+
+}
+
+h2{
+
+    color:#b45309;
+
+    margin-bottom:10px;
+
+}
+
+ion-item{
+
+    width:100%;
+    max-width:330px;
+
+}
+
+ion-button{
+
+    width:100%;
+    max-width:330px;
+
+}

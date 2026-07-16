@@ -1,0 +1,68 @@
+<ion-content class="ion-padding">
+
+  <div class="register-container">
+
+    <img
+      src="assets/images/LogoTitulo.png"
+      class="logo">
+
+    <h2>Crear Cuenta</h2>
+
+    <ion-item>
+
+      <ion-label position="stacked">
+        Usuario
+      </ion-label>
+
+      <ion-input
+        [(ngModel)]="usuario">
+      </ion-input>
+
+    </ion-item>
+
+    <ion-item>
+
+      <ion-label position="stacked">
+        Contraseña
+      </ion-label>
+
+      <ion-input
+        type="password"
+        [(ngModel)]="contrasena">
+      </ion-input>
+
+    </ion-item>
+
+    <ion-item>
+
+      <ion-label position="stacked">
+        Confirmar contraseña
+      </ion-label>
+
+      <ion-input
+        type="password"
+        [(ngModel)]="confirmarContrasena">
+      </ion-input>
+
+    </ion-item>
+
+    <ion-button
+      expand="block"
+      (click)="registrar()">
+
+      Registrarse
+
+    </ion-button>
+
+    <ion-button
+      expand="block"
+      fill="clear"
+      routerLink="/login">
+
+      Ya tengo una cuenta
+
+    </ion-button>
+
+  </div>
+
+</ion-content>
